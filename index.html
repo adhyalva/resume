@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokshitha's Portfolio</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-size: 18px;
+            overflow-x: hidden;
+        }
+        nav {
+            background-color: #333;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffaf7b;
+        }
+        section {
+            min-height: 100vh;
+            padding: 80px 20px;
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        #home {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4, #fbc2eb);
+            color: #333;
+        }
+        #resume {
+            background: linear-gradient(to bottom right, #2193b0, #6dd5ed);
+            color: white;
+            text-align: left;
+            padding: 50px;
+        }
+        #biodata {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+        }
+        #contact {
+            background: linear-gradient(to bottom left, #ff512f, #f09819);
+            color: white;
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+.profile-img {
+    width: 300px; /* Increased width */
+    height: 300px; /* Increased height */
+    border-radius: 50%; /* Keeps the circular shape */
+    border: 3px solid white; /* Keeps the border */
+    margin-bottom: 20px;
+}
+
+               #home .profile-img {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        table th, table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid white;
+            font-size: 1.2rem;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+            font-size: 1.2rem;
+        }
+        ul {
+            font-size: 1.2rem;
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        a {
+            color: lightblue;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#biodata">Biodata</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <img src="some.jpg" alt="Adhya's Photo" class="profile-img">
+        <h1>Welcome to Adhya's Portfolio</h1>
+        <p>Your journey to knowing me starts here!</p>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h1>Resume</h1>
+        <div class="profile">
+            <div>
+                <h3>Skills</h3>
+                <ul>
+                    <li>Communication Skill</li>
+                    <li>Problem Solving</li>
+                    <li>Time Management</li>
+                    <li>HTML, JavaScript</li>
+                    <li>C, C++, Java</li>
+                </ul>
+                <h3>Education</h3>
+                <ul>
+                    <li>Bachelor of Science in Computer Science - Vivekananda College of Engineering and Technology</li>
+                </ul>
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Database Management Systems</li>
+                    <li>Web Development (Front-end)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biodata Section -->
+    <section id="biodata">
+        <h1>Biodata</h1>
+        <table>
+            <tr>
+                <th>Name:</th>
+                <td>Adhya Alva</td>
+            </tr>
+            <tr>
+                <th>Date of Birth:</th>
+                <td>03/09/2004</td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td>Ananda Nilaya ,Nelikatte , Near Puttur Bus Stand,Puttur,Karnataka,D.K-574201  </td>
+            </tr>
+            <tr>
+                <th>Phone:</th>
+                <td>9481172547</td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td><a href="mailto:alvaadhya@gmail.com">alvaadhya@gmail.com</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Reach out to me anytime using the details below:</p>
+        <ul>
+            <li>Phone:9481172547 </li>
+            <li>Email: <a href="mailto:alvaadhya@gmail.com">alvaadhya@gmail.com</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Adhya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
